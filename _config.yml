@@ -15,9 +15,9 @@ direction: ltr
 # languages/*.yml
 nav:
   home: /
-  about: /about/
   articles: /archives/
   projects: http://github.com/probberechts
+  about: /about/
 
 
 # Links to your social media accounts.
@@ -28,17 +28,14 @@ nav:
 # 'icon' value will be used as title when 'label' is missing.
 social_links:
   -
+    icon: mail
+    link: mailto:name@email.com
+  -
     icon: github
     link: http://github.com/probberechts/cactus-dark
   -
     icon: twitter
     link: /
-  -
-    icon: facebook
-    link: /
-  -
-    icon: mail
-    link: mailto:name@email.com
   -
     icon: mastodon
     label: mastodon.social
@@ -59,7 +56,7 @@ tags_overview: false
 #   - sort_updated: sort posts by last modification date instead of creation date.
 posts_overview:
   show_all_posts: false
-  post_count: 5
+  post_count: 8
   sort_updated: false
 
 # Customize the archive view.
@@ -79,7 +76,7 @@ post:
 # Customize the copyright years
 # Note: if start_year/end_year not provided, will use current year.
 copyright:
-  start_year: 2016
+  start_year: 2018
   end_year:
 
 # Customize the 404 page
@@ -105,11 +102,11 @@ error_404:
 #   - grayout: whether to enable a hover effect on the logo
 logo:
   enabled: true
-  width: 50
-  height: 50
+  width: 55
+  height: 55
   url: /images/logo.png
   gravatar: false
-  grayout: true
+  grayout: false
 
 # Customize the favicons.
 # Cactus supports a limited set of the three most important icons:
@@ -138,10 +135,10 @@ favicon:
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
 # Alternatively, add your own custom color scheme to source/css/_colors.
-colorscheme: dark
+colorscheme: white
 
 # Maximal width of the page in rem units.
-page_width: 48
+page_width: 52
 
 
 ##############################################################################
