@@ -182,6 +182,11 @@ google_analytics:
   enabled: false
   id: UA-86660611-1
 
+la_analytics:
+  enabled: false
+  id: 3I0QIERSXxxx
+  ck: 3I0QIERSXxxx
+
 # Fill in your Baidu Analytics tracking ID to enable Baidu Analytics.
 baidu_analytics:
   enabled: false
