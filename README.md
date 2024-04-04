@@ -6,7 +6,7 @@ A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal websi
 
 ![screenshot](https://user-images.githubusercontent.com/2175271/137625287-24a4ac77-fbc9-4c99-a4cd-90455d93d13c.png)
 
-**This theme is modified somes feature from [hexo-theme-cactus](https://probberechts.github.io/hexo-theme-cactus/).**
+**This theme is modified some features from [hexo-theme-cactus](https://probberechts.github.io/hexo-theme-cactus/).**
 
 ## Modifications
 
