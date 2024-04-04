@@ -12,13 +12,13 @@ A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal websi
 
 1. Set "white" as default color scheme, all modifications are only based on "white" color scheme.
 
-2. Set default logo size from 50 to 55, reform nav margin top.
+2. Modify default logo size from 50 to 55, reform nav margin top.
 
 3. Replace comma that after each social icon to whitespace.
 
 4. Remove category infomation from post detail, post tags arg remained.
 
-5. Set content width from 48 to 52.
+5. Modify content width from 48 to 52.
 
 6. Replace the underline color of post tag info with green color.
 
