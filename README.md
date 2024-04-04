@@ -6,23 +6,23 @@ A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal websi
 
 ![screenshot](https://user-images.githubusercontent.com/2175271/137625287-24a4ac77-fbc9-4c99-a4cd-90455d93d13c.png)
 
-**This theme is modify some feature based on [hexo-theme-cactus](https://probberechts.github.io/hexo-theme-cactus/).**
+**This theme is modified some feature from [hexo-theme-cactus](https://probberechts.github.io/hexo-theme-cactus/).**
 
 ## Modifications
 
-1. set "white" as default color scheme, all modifications are only based on "white" color scheme.
+1. Set "white" as default color scheme, all modifications are only based on "white" color scheme.
 
-2. set default logo size from 50 to 55, reform nav margin top.
+2. Set default logo size from 50 to 55, reform nav margin top.
 
-3. replace comma that after each social icon to whitespace.
+3. Replace comma that after each social icon to whitespace.
 
-4. remove category infomation from post detail, post tags arg remained.
+4. Remove category infomation from post detail, post tags arg remained.
 
-5. set content width from 48 to 52.
+5. Set content width from 48 to 52.
 
-6. replace the underline color of post tag info with green color.
+6. Replace the underline color of post tag info with green color.
 
-7. set grayout as true.
+7. Set grayout as true.
 
 ---
 
