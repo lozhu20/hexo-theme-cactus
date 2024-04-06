@@ -17,8 +17,8 @@ nav:
   home: /
   articles: /archives/
   projects: http://github.com/probberechts
+  frinds: /friends/
   about: /about/
-
 
 # Links to your social media accounts.
 # The 'icon' keys should correspond to Fontawesome icon names
@@ -44,6 +44,14 @@ social_links:
     icon: mastodon
     label: fosstodon.org
     link: https://fosstodon.org/@alice
+
+# friends link template config
+friends:
+  link:
+    name: lozhu's blog
+    icon: https://lozhu.happy365.day/images/logo3.png
+    url: https://lozhu.happy365.day
+    desc: 一个记录技术、阅读、生活的博客
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud

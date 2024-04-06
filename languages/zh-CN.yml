@@ -6,6 +6,13 @@ nav:
   tag: 标签
   category: 分类
   search: 搜索
+
+friends:
+  link:
+    name: 名称
+    icon: 图标
+    url: 链接
+    desc: 描述
   
 icons:
   menu: 目录

@@ -8,7 +8,10 @@ A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal websi
 
 **This theme is modified some features from [hexo-theme-cactus](https://probberechts.github.io/hexo-theme-cactus/).**
 
-## Modifications
+## Modifications by Lozhu
+
+update on 2024-03-05 by lozhu
+2024-03-05 更新
 
 1. Set "white" as default color scheme, all modifications are only based on "white" color scheme.
 
@@ -23,6 +26,15 @@ A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal websi
 6. Replace the underline color of post tag info with green color.
 
 7. Set grayout as true.
+
+update on 2024-04-06 by lozhu
+2024-04-06 更新
+
+1. 新增友链页面
+
+2. 新增友链相关配置及数据文件
+
+3. 增加国际化配置
 
 ---
 

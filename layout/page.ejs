@@ -33,6 +33,38 @@
               <%- list_categories() %>
             </div>
           </div>
+        <% } else if (page.type === 'friends') { %> 
+          <div>
+            <section>
+              <span class="h1">友链格式</span>
+              <div>
+                <p><%- _p('friends.link.name') %>: <%= theme.friends.link.name %></p>
+                <p><%- _p('friends.link.icon') %>: <%= theme.friends.link.icon %></p>
+                <p><%- _p('friends.link.url') %>: <%= theme.friends.link.url %></p>
+                <p><%- _p('friends.link.desc') %>: <%= theme.friends.link.desc %></p>
+              </div>
+            </section>
+            <section>
+              <span class="h1">友链列表</span>
+              <div class="link-container">
+                <% for(var {name, url, icon, desc} of site.data.friends) { %>
+                  <div class="link-item">
+                    <img
+                      style="margin: 0"
+                      src="<%= icon %>"
+                      alt="icon"
+                    />
+                    <div class="link-content">
+                      <span class="blog-name">
+                        <a href="<%= url %>"><%= name %></a>
+                      </span>
+                      <span class="blog-desc"><%= desc %></span>
+                    </div>
+                  </div>
+                <% } %>
+              </div>
+            </section>
+          </div>
         <% } else { %>
           <%- page.content %>
         <% } %>

@@ -7,6 +7,13 @@ nav:
   projects: Projects
   search: Search
 
+friends:
+  link:
+    name: Name
+    icon: Icon
+    url: URL
+    desc: Desc
+
 icons:
   menu: Menu
   top: Top
