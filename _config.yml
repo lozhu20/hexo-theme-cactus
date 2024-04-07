@@ -5,7 +5,7 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: http://github.com/probberechts
+projects_url: http://github.com/lozhu20
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -16,7 +16,7 @@ direction: ltr
 nav:
   home: /
   articles: /archives/
-  projects: http://github.com/probberechts
+  projects: http://github.com/lozhu20
   friends: /friends/
   about: /about/
 
@@ -34,16 +34,9 @@ social_links:
     icon: github
     link: http://github.com/probberechts/cactus-dark
   -
-    icon: twitter
-    link: /
-  -
     icon: mastodon
     label: mastodon.social
     link: https://mastodon.social/@alice
-  -
-    icon: mastodon
-    label: fosstodon.org
-    link: https://fosstodon.org/@alice
 
 # friends link template config
 friends:
@@ -51,7 +44,7 @@ friends:
     name: lozhu's blog
     icon: https://lozhu.happy365.day/images/logo3.png
     url: https://lozhu.happy365.day
-    desc: 一个记录技术、阅读、生活的博客
+    desc: 一切皆是因为好玩～
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
@@ -64,7 +57,7 @@ tags_overview: false
 #   - sort_updated: sort posts by last modification date instead of creation date.
 posts_overview:
   show_all_posts: false
-  post_count: 8
+  post_count: 5
   sort_updated: false
 
 # Customize the archive view.
@@ -112,7 +105,7 @@ logo:
   enabled: true
   width: 55
   height: 55
-  url: /images/logo.png
+  url: /images/logo3.png
   gravatar: false
   grayout: false
 
@@ -196,7 +189,7 @@ msvalidate_01:
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics:
   enabled: false
-  id: UA-86660611-1
+  id: UA-xxxxxx-1
 
 la_analytics:
   enabled: false
@@ -206,12 +199,12 @@ la_analytics:
 # Fill in your Baidu Analytics tracking ID to enable Baidu Analytics.
 baidu_analytics:
   enabled: false
-  id: 2e6da3c375c8a87f5b664cea6d4cb29c
+  id: 2e6da3c375c8a87f5b664cea6
 
 # Fill in your Cloudflare Analytics tracking ID to enable Cloudflare Analytics.
 cloudflare_analytics:
   enabled: false
-  id: 0dabb6e21848405483a237e6a7b6ed04
+  id: 0dabb6e21848405483a237e6a
 
 # Fill in your Umami Analytics tracking ID to enable Umami Analytics.
 umami_analytics:
