@@ -17,7 +17,7 @@ nav:
   home: /
   articles: /archives/
   projects: http://github.com/probberechts
-  frinds: /friends/
+  friends: /friends/
   about: /about/
 
 # Links to your social media accounts.
@@ -127,13 +127,13 @@ logo:
 #   - gravatar: whether to create a favicon from your Gravatar
 favicon:
   desktop:
-    url: /images/favicon.ico
+    url: /images/favicon3.ico
     gravatar: false
   android:
-    url: /images/favicon-192x192.png
+    url: /images/favicon-192x1923.png
     gravatar: false
   apple:
-    url: /images/apple-touch-icon.png
+    url: /images/apple-touch-icon3.png
     gravatar: false
 
 # The color scheme that should be used to highlight codeblocks.
@@ -184,6 +184,14 @@ utterances:
   issue_term: pathname
   label: Comment
   theme: github-dark
+
+# Biadu site validate
+baidu_site_verification:
+  content: codeva-OBVxxxxx
+
+# msvalidate.01 - bing verification
+msvalidate_01:
+  content: B9019CE3751A15D6xxxxxxxxxxxxxxxx
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics:

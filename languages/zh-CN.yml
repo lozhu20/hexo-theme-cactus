@@ -6,6 +6,7 @@ nav:
   tag: 标签
   category: 分类
   search: 搜索
+  friends: 友链
 
 friends:
   link:
@@ -13,6 +14,8 @@ friends:
     icon: 图标
     url: 链接
     desc: 描述
+  template: 模板
+  list: 列表
   
 icons:
   menu: 目录

@@ -36,7 +36,7 @@
         <% } else if (page.type === 'friends') { %> 
           <div>
             <section>
-              <span class="h1">友链格式</span>
+              <span class="h1"><%- _p('friends.template') %></span>
               <div>
                 <p><%- _p('friends.link.name') %>: <%= theme.friends.link.name %></p>
                 <p><%- _p('friends.link.icon') %>: <%= theme.friends.link.icon %></p>
@@ -45,7 +45,7 @@
               </div>
             </section>
             <section>
-              <span class="h1">友链列表</span>
+              <span class="h1"><%- _p('friends.list') %></span>
               <div class="link-container">
                 <% for(var {name, url, icon, desc} of site.data.friends) { %>
                   <div class="link-item">
@@ -64,6 +64,7 @@
                 <% } %>
               </div>
             </section>
+            <%- partial('_partial/comments') %>
           </div>
         <% } else { %>
           <%- page.content %>

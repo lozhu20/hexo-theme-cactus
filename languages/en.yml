@@ -6,13 +6,16 @@ nav:
   category: Category
   projects: Projects
   search: Search
+  friends: Friends
 
 friends:
   link:
     name: Name
     icon: Icon
-    url: URL
+    url: Link
     desc: Desc
+  template: Template
+  list: List
 
 icons:
   menu: Menu
