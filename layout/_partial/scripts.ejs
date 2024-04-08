@@ -142,3 +142,37 @@
       }());
   </script>
 <% } %>
+<!-- image modal -->
+<script>
+  (function() {
+    var contentNode = document.getElementsByClassName('content e-content');
+    if (!contentNode || contentNode.length === 0) {
+      console.log('no content, exit');
+      return;
+    }
+
+    var imgsNodes = contentNode[0].getElementsByTagName('img');
+    if (!imgsNodes || imgsNodes.length === 0) {
+      console.log('no image, exit');
+      return;
+    }
+
+    var span = document.getElementById('modal_close_btn');
+    span.onclick = function() { 
+      modal.style.display = "none";
+    };
+
+    var modal = document.getElementById('modal');
+    var modalImage = document.getElementById('modal_image');
+    var captionText = document.getElementById('caption');
+
+    for (var i = imgsNodes.length - 1; i >= 0; i--) {
+      let image = imgsNodes[i];
+      image.onclick = function() {
+        modal.style.display = "block";
+        modalImage.src = this.src;
+        captionText.innerHTML = this.alt || "文章配图";
+      };
+    }
+  }());
+</script>
