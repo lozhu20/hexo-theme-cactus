@@ -48,6 +48,11 @@ friends:
     url: https://lozhu.happy365.day
     desc: 一切皆是因为好玩～
 
+# ICP
+moe_icp:
+  enabled: true
+  number: 20249900
+
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
 tags_overview: false

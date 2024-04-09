@@ -36,7 +36,14 @@ update on 2024-04-06 by lozhu
 
 3. 增加国际化配置
 
-4. 增加文章详情页图片弹窗预览
+update on 2024-04-09 by lozhu
+2024-04-09 更新
+
+1. 增加文章详情页图片弹窗预览
+
+2. nav 中增加 [开往](https://www.travellings.cn) 
+
+3. 增加备案号配置
 
 ---
 
