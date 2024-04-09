@@ -15,8 +15,8 @@ friends:
     icon: Icon
     url: Link
     desc: Desc
-  template: Template
-  list: List
+  template: My Information
+  list: Friends
 
 icons:
   menu: Menu
