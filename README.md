@@ -43,7 +43,7 @@ update on 2024-04-09 by lozhu
 
 2. nav 中增加 [开往](https://www.travellings.cn) 
 
-3. 增加备案号配置
+3. 增加 [萌备](https://icp.gov.moe/aboutus.php) 配置
 
 ---
 
