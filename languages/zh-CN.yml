@@ -6,7 +6,7 @@ nav:
   tag: 标签
   category: 分类
   search: 搜索
-  travelling: 开往
+  travelling: 开往 🚇
   friends: 友链
 
 friends:
@@ -26,7 +26,7 @@ footer:
   copyright: Copyright
 
 index:
-  find_me_on: 在这里找到我：
+  find_me_on: 在这里找到我 -> 
   enum_comma: '，'
   enum_and: 和
   articles: 文章
