@@ -45,6 +45,11 @@ update on 2024-04-09 by lozhu
 
 3. 增加 [萌备](https://icp.gov.moe/aboutus.php) 配置
 
+update on 2024-04-15 by lozhu
+2024-04-15 更新
+
+1. 增加 RSS 订阅页面
+
 ---
 
 ## Summary
