@@ -8,6 +8,7 @@ nav:
   search: Search
   travelling: Travelling
   friends: Friends
+  moments: Moments
 
 friends:
   link:
@@ -17,6 +18,9 @@ friends:
     desc: Desc
   template: My Information
   list: Friends
+
+moments:
+  update_desc: rss subscription (update per 2 hours)
 
 icons:
   menu: Menu

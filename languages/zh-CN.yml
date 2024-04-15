@@ -8,6 +8,7 @@ nav:
   search: 搜索
   travelling: 开往 🚇
   friends: 友链
+  moments: 订阅
 
 friends:
   link:
@@ -17,6 +18,9 @@ friends:
     desc: 描述
   template: 本站信息
   list: 列表
+
+moments:
+  update_desc: RSS 订阅（每 2 小时由脚本自动更新）
   
 icons:
   menu: 目录

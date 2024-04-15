@@ -37,12 +37,12 @@
           <div>
             <section>
               <span class="h1"><%- _p('friends.template') %></span>
-              <div>
-                <p><%- _p('friends.link.name') %>: <%= theme.friends.link.name %></p>
-                <p><%- _p('friends.link.icon') %>: <%= theme.friends.link.icon %></p>
-                <p><%- _p('friends.link.url') %>: <%= theme.friends.link.url %></p>
-                <p><%- _p('friends.link.desc') %>: <%= theme.friends.link.desc %></p>
-              </div>
+              <ul>
+                <li><%- _p('friends.link.name') %>: <%= theme.friends.link.name %></li>
+                <li><%- _p('friends.link.icon') %>: <%= theme.friends.link.icon %></li>
+                <li><%- _p('friends.link.url') %>: <%= theme.friends.link.url %></li>
+                <li><%- _p('friends.link.desc') %>: <%= theme.friends.link.desc %></li>
+              </ul>
             </section>
             <section>
               <span class="h1"><%- _p('friends.list') %></span>
@@ -65,6 +65,33 @@
               </div>
             </section>
             <%- partial('_partial/comments') %>
+          </div>
+        <% } else if (page.type === 'moments') { %>
+          <div>
+            <span class="h2"><%- _p('moments.update_desc') %></span>
+            <div class="moments">
+              <% for(var {author, homepage, title, momentUrl, publishTime, summary} of site.data.moments) { %>
+                <div class="moment">
+                  <a href="<%= homepage %>" target="_blank" rel="noopener noreferrer">
+                    <div class="avatar" value="<%= author %>" data-content=""></div>
+                  </a>
+                  <div class="moment-content">
+                    <div class="moment-title">
+                        <a href="<%= momentUrl %>" target="_blank" rel="noopener noreferrer">
+                          <%= title %>
+                        </a>
+                    </div>
+                    <div class="moment-info">
+                        <span><%= author %></span>
+                        <span><%= publishTime %></span>
+                    </div>
+                    <div class="moment-summary">
+                        <%= summary %>
+                    </div>
+                  </div>
+                </div>
+              <% } %>
+            </div>
           </div>
         <% } else { %>
           <%- page.content %>
