@@ -17,7 +17,8 @@ friends:
     url: 链接
     desc: 描述
   template: 本站信息
-  list: 列表
+  list: 友链列表
+  tips: 长时间无法正常访问的站点会被移除～
 
 moments:
   update_desc: RSS 订阅（每 2 小时由脚本自动更新）
@@ -33,7 +34,7 @@ index:
   find_me_on: 在这里找到我 -> 
   enum_comma: '，'
   enum_and: 和
-  articles: 最新文章
+  articles: 最新发布
   projects: 项目
   topics: 标签
   most_recent: 最新发布

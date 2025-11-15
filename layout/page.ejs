@@ -36,15 +36,6 @@
         <% } else if (page.type === 'friends') { %> 
           <div>
             <section>
-              <span class="h1"><%- _p('friends.template') %></span>
-              <ul>
-                <li><%- _p('friends.link.name') %>: <%= theme.friends.link.name %></li>
-                <li><%- _p('friends.link.icon') %>: <%= theme.friends.link.icon %></li>
-                <li><%- _p('friends.link.url') %>: <%= theme.friends.link.url %></li>
-                <li><%- _p('friends.link.desc') %>: <%= theme.friends.link.desc %></li>
-              </ul>
-            </section>
-            <section>
               <span class="h1"><%- _p('friends.list') %></span>
               <div class="link-container">
                 <% for(var {name, url, icon, desc} of site.data.friends) { %>
@@ -63,6 +54,18 @@
                   </div>
                 <% } %>
               </div>
+            </section>
+            <section>
+              <span class="h1"><%- _p('friends.template') %></span>
+              <ul>
+                <li><%- _p('friends.link.name') %>: <%= theme.friends.link.name %></li>
+                <li><%- _p('friends.link.icon') %>: <%= theme.friends.link.icon %></li>
+                <li><%- _p('friends.link.url') %>: <%= theme.friends.link.url %></li>
+                <li><%- _p('friends.link.desc') %>: <%= theme.friends.link.desc %></li>
+              </ul>
+              <p>
+                <i><%- _p('friends.tips') %></i>
+              </p>
             </section>
             <%- partial('_partial/comments') %>
           </div>

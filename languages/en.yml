@@ -18,6 +18,7 @@ friends:
     desc: Desc
   template: My Information
   list: Friends
+  tips: Inactive site will be removed!
 
 moments:
   update_desc: rss subscription (update per 2 hours)

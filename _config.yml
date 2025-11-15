@@ -5,7 +5,7 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: http://github.com/lozhu20
+projects_url: https ://github.com/lozhu20
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -17,11 +17,12 @@ nav:
   home: /
   articles: /archives/
   # projects: http://github.com/lozhu20
+  # moments: https://s.dusays.com/u/lozhu
   friends: /friends/
-  moments: /moments/
-  travelling: https://www.travellings.cn/go.html
-  search: /search/
+  # moments: /moments/
+  # search: /search/
   about: /about/
+  # travelling: https://www.travellings.cn/go.html
 
 # Links to your social media accounts.
 # The 'icon' keys should correspond to Fontawesome icon names
@@ -30,29 +31,47 @@ nav:
 # You can optionally add a 'label' key to set the title attribute on the link. 
 # 'icon' value will be used as title when 'label' is missing.
 social_links:
-  -
-    icon: mail
-    link: mailto:name@email.com
-  -
-    icon: github
-    link: http://github.com/probberechts/cactus-dark
-  -
-    icon: mastodon
-    label: mastodon.social
-    link: https://mastodon.social/@alice
+  # -
+  #   icon: mail
+  #   label: mail
+  #   link: mailto:earth.aioli0o@icloud.com
+  # -
+  #   icon: github
+  #   label: GitHub
+  #   link: http://github.com/lozhu20
+  # -
+  #  icon: mastodon
+  #  label: mastodon.social
+  #  link: https://mastodon.social/@lozhu
+  # -
+  #   icon: rss
+  #   label: rss
+  #   link: https://lozhu.happy365.day/atom.xml
 
 # friends link template config
 friends:
   link:
-    name: lozhu's blog
-    icon: https://lozhu.happy365.day/images/logo3.png
-    url: https://lozhu.happy365.day
+    name: zhu's blog
+    icon: https://zhu.happy365.day/images/logo.png
+    url: https://zhu.happy365.day
     desc: 一切皆是因为好玩～
 
 # ICP
 moe_icp:
   enabled: true
   number: 20249900
+
+# 开往
+travellings:
+  enabled: true
+  description: 🚇开往
+  url: https://www.travellings.cn/go.html
+
+# 十年之约
+forever_blog:
+  enabled: true
+  description: 十年之约
+  url: https://www.foreverblog.cn
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
@@ -65,7 +84,7 @@ tags_overview: false
 #   - sort_updated: sort posts by last modification date instead of creation date.
 posts_overview:
   show_all_posts: false
-  post_count: 5
+  post_count: 10
   sort_updated: false
 
 # Customize the archive view.
@@ -139,11 +158,14 @@ favicon:
 
 # The color scheme that should be used to highlight codeblocks.
 # See source/css/_highlight for a list of all available color schemes.
-# highlight: rainbow
+highlight: github
+# highlight: solarized-light
 
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
 # Alternatively, add your own custom color scheme to source/css/_colors.
+# colorscheme: white
+# colorscheme: classic
 colorscheme: white
 
 # Maximal width of the page in rem units.
@@ -180,34 +202,51 @@ disqus:
 
 # Fill in your Utterances data to enable Utterances comments
 utterances:
-  enabled: true
+  enabled: false
   repo: lozhu20/my-blog-comments
   issue_term: pathname
   label: Comment
   theme: github-light
+  # theme: github-dark
+
+giscus:
+  enabled: true
+  repo: "lozhu20/my-blog-comments"
+  repo_id: "R_kgDOLq3geg"
+  category: "Announcements"
+  category_id: "DIC_kwDOLq3ges4Cx0qi"
+  mapping: "pathname"
+  strict: "0"
+  reactions_enabled: "1"
+  emit-metadata: "0"
+  input_position: "top"
+  theme: "light"
+  lang: "zh-CN"
+  loading: "lazy"
+  crossorigin: "anonymous"
 
 # Biadu site validate
 baidu_site_verification:
-  content: codeva-OBVxxxxx
+  content: codeva-OBV0UPgBod
 
 # msvalidate.01 - bing verification
 msvalidate_01:
-  content: B9019CE3751A15D6xxxxxxxxxxxxxxxx
+  content: B9019CE3751A15D63E78AF8679980069
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics:
-  enabled: false
-  id: UA-xxxxxx-1
+  enabled: true
+  id: G-XMGS491MQF
 
 la_analytics:
-  enabled: false
-  id: 3I0QIERSXxxx
-  ck: 3I0QIERSXxxx
+  enabled: true
+  id: 3I0QIERSX42bDzDc
+  ck: 3I0QIERSX42bDzDc
 
 # Fill in your Baidu Analytics tracking ID to enable Baidu Analytics.
 baidu_analytics:
-  enabled: false
-  id: 2e6da3c375c8a87f5b664cea6
+  enabled: true
+  id: 8bdf047ae0a66729bd3b27e8bb56fe11
 
 # Fill in your Cloudflare Analytics tracking ID to enable Cloudflare Analytics.
 cloudflare_analytics:

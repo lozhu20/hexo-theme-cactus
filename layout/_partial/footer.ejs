@@ -6,11 +6,23 @@
     <%= startYear >= endYear ? endYear : startYear + "-" + endYear %>
     <%= config.author || config.title %>
   </div>
-  <% if (theme.moe_icp.enabled && theme.moe_icp.number) { %>
-    <div>
-      <a href="https://icp.gov.moe/?keyword=<%= theme.moe_icp.number %>" target="_blank">萌ICP备 <%= theme.moe_icp.number %> 号</a>
-    </div>
-  <% } %>
+  <div class="footer-center">
+    <% if (theme.moe_icp.enabled && theme.moe_icp.number) { %>
+      <a href="https://icp.gov.moe/?keyword=<%= theme.moe_icp.number %>" target="_blank">萌ICP备<%= theme.moe_icp.number %>号</a>
+    <% } %>
+    <% if (theme.travellings.enabled) { %>
+      <% if (theme.moe_icp.enabled && theme.moe_icp.number) { %>
+        <span> | </span>
+      <% } %>
+      <a href="<%= theme.travellings.url %>" target="_blank"><%= theme.travellings.description %></a>
+    <% } %>
+    <% if (theme.forever_blog.enabled) { %>
+      <% if (theme.travellings.enabled) { %>
+        <span> | </span>
+      <% } %>
+      <a href="<%= theme.forever_blog.url %>" target="_blank"><%= theme.forever_blog.description %></a>
+    <% } %>
+  </div>
   <div class="footer-right">
     <nav>
       <ul>
