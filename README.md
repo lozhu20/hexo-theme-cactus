@@ -8,7 +8,7 @@ A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal websi
 
 **This theme is modified some features from [hexo-theme-cactus](https://probberechts.github.io/hexo-theme-cactus/).**
 
-## Modifications by Lozhu
+## Modifications by me
 
 update on 2024-03-05 by lozhu
 2024-03-05 更新
@@ -48,7 +48,12 @@ update on 2024-04-09 by lozhu
 update on 2024-04-15 by lozhu
 2024-04-15 更新
 
-1. 增加 RSS 订阅页面
+1. 增加 RSS 订阅页面、
+
+update on 2025-11-16 by lozhu
+2024-04-09 更新
+
+1. 增加 Giscus 评论系统
 
 ---
 

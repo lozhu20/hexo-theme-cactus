@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
     <meta name="baidu-site-verification" content="<%= theme.baidu_site_verification.content %>" />
     <meta name="msvalidate.01" content="<%= theme.msvalidate_01.content %>" />
+    <style>
+      body { visibility: hidden; }
+    </style>
     <%- open_graph({
         image:          thumbnail(page),
         fb_app_id:      theme.open_graph.fb_app_id,
@@ -79,4 +82,5 @@
 		</script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 	<% } %>
+  <script src="/js/switch-theme.js"></script> 
 </head>

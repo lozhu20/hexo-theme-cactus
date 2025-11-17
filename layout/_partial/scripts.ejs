@@ -143,42 +143,42 @@
   </script>
 <% } %>
 <!-- giscus -->
- <% if (page.comments && theme.giscus.enabled && theme.giscus.repo && theme.giscus.category && theme.giscus.theme){ %>
-    <script type="text/javascript">
-      var giscus_repo = '<%= theme.giscus.repo %>';
-      var giscus_repo_id = '<%= theme.giscus.repo_id %>';
-      var giscus_category = '<%= theme.giscus.category %>';
-      var giscus_category_id = '<%= theme.giscus.category_id %>';
-      var giscus_mapping = '<%= theme.giscus.mapping %>';
-      var giscus_strict = '<%= theme.giscus.strict %>';
-      var giscus_reactions_enabled = '<%= theme.giscus.reactions_enabled %>';
-      var giscus_emit_metadata = '<%= theme.giscus.emit_metadata %>';
-      var giscus_input_position = '<%= theme.giscus.input_position %>';
-      var giscus_theme = '<%= theme.giscus.theme %>';
-      var theme_lang = '<%= theme.lang %>';
-      var giscus_loading = '<%= theme.giscus.loading %>';
-      var giscus_crossorigin = '<%= theme.giscus.crossorigin %>';
+<% if (page.comments && theme.giscus.enabled && theme.giscus.repo && theme.giscus.category && theme.giscus.theme){ %>
+  <script type="text/javascript">
+    var giscus_repo = '<%= theme.giscus.repo %>';
+    var giscus_repo_id = '<%= theme.giscus.repo_id %>';
+    var giscus_category = '<%= theme.giscus.category %>';
+    var giscus_category_id = '<%= theme.giscus.category_id %>';
+    var giscus_mapping = '<%= theme.giscus.mapping %>';
+    var giscus_strict = '<%= theme.giscus.strict %>';
+    var giscus_reactions_enabled = '<%= theme.giscus.reactions_enabled %>';
+    var giscus_emit_metadata = '<%= theme.giscus.emit_metadata %>';
+    var giscus_input_position = '<%= theme.giscus.input_position %>';
+    var giscus_theme = '';
+    var theme_lang = '<%= theme.lang %>';
+    var giscus_loading = '<%= theme.giscus.loading %>';
+    var giscus_crossorigin = '<%= theme.giscus.crossorigin %>';
 
-      (function(){
-          var script = document.createElement('script');
+    (function(){
+        var script = document.createElement('script');
 
-          script.src = 'https://giscus.app/client.js';
-          script.setAttribute('data-repo', giscus_repo);
-          script.setAttribute('data-repo-id', giscus_repo_id);
-          script.setAttribute('data-category', giscus_category);
-          script.setAttribute('data-category-id', giscus_category_id);
-          script.setAttribute('data-mapping', giscus_mapping);
-          script.setAttribute('data-strict', giscus_strict);
-          script.setAttribute('data-reactions-enabled', giscus_reactions_enabled);
-          script.setAttribute('data-emit-metadata', giscus_emit_metadata);
-          script.setAttribute('data-input-position', giscus_input_position);
-          script.setAttribute('data-theme', giscus_theme);
-          script.setAttribute('data-lang', theme_lang);
-          script.setAttribute('data-loading', giscus_loading);
-          script.setAttribute('crossorigin', giscus_crossorigin);
-          script.async = true;
-          (document.getElementById('giscus_thread')).appendChild(script);
-      }());
+        script.src = 'https://giscus.app/client.js';
+        script.setAttribute('data-repo', giscus_repo);
+        script.setAttribute('data-repo-id', giscus_repo_id);
+        script.setAttribute('data-category', giscus_category);
+        script.setAttribute('data-category-id', giscus_category_id);
+        script.setAttribute('data-mapping', giscus_mapping);
+        script.setAttribute('data-strict', giscus_strict);
+        script.setAttribute('data-reactions-enabled', giscus_reactions_enabled);
+        script.setAttribute('data-emit-metadata', giscus_emit_metadata);
+        script.setAttribute('data-input-position', giscus_input_position);
+        script.setAttribute('data-theme', giscus_theme);
+        script.setAttribute('data-lang', theme_lang);
+        script.setAttribute('data-loading', giscus_loading);
+        script.setAttribute('crossorigin', giscus_crossorigin);
+        script.async = true;
+        (document.getElementById('giscus_thread')).appendChild(script);
+    }());
   </script>
 <% } %>
 

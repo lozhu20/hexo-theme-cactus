@@ -5,9 +5,15 @@
   <span id="menu">
     <span id="nav">
       <ul>
-        <% for (var i in theme.nav) { %><!--
-       --><li><a href="<%- url_for(theme.nav[i]) %>"><%= __('nav.'+i).replace("nav.", "") %></a></li><!--
-     --><% } %>
+        <% for (var i in theme.nav) { %>
+          <% if (theme.nav[i].indexOf("theme") < 0) { %>
+            <a href="<%- url_for(theme.nav[i]) %>"><%= __('nav.'+i).replace("nav.", "") %></a>
+          <% } else { %>
+            <button id="btn-theme-switch" aria-label="Toggle dark mode" style="background: none; border: none; cursor: pointer; margin-left: auto">
+              <%= __('nav.'+i).replace("nav.", "") %>
+            </button>
+          <% } %>
+        <% } %>
       </ul>
     </span>
     <br/>

@@ -2,6 +2,9 @@
   <% if (config.description) { %>
     <%- markdown(config.description) %>
   <% } %>
+  <% if (site.data.sentence) { %>
+    <%- markdown(site.data.sentence[Math.floor(Math.random() * site.data.sentence.length)]) %>
+  <% } %>
   <% if (theme.social_links) { %>
     <p>
       <%= __('index.find_me_on') %>

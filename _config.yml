@@ -23,6 +23,7 @@ nav:
   # search: /search/
   about: /about/
   # travelling: https://www.travellings.cn/go.html
+  ☀️: /theme/
 
 # Links to your social media accounts.
 # The 'icon' keys should correspond to Fontawesome icon names
@@ -165,8 +166,7 @@ highlight: github
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
 # Alternatively, add your own custom color scheme to source/css/_colors.
 # colorscheme: white
-# colorscheme: classic
-colorscheme: white
+colorscheme: classic
 
 # Maximal width of the page in rem units.
 page_width: 52
@@ -227,25 +227,25 @@ giscus:
 
 # Biadu site validate
 baidu_site_verification:
-  content: codeva-OBV0UPgBod
+  content:
 
 # msvalidate.01 - bing verification
 msvalidate_01:
-  content: B9019CE3751A15D63E78AF8679980069
+  content:
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics:
-  enabled: true
+  enabled: false
   id: G-XMGS491MQF
 
 la_analytics:
-  enabled: true
+  enabled: false
   id: 3I0QIERSX42bDzDc
   ck: 3I0QIERSX42bDzDc
 
 # Fill in your Baidu Analytics tracking ID to enable Baidu Analytics.
 baidu_analytics:
-  enabled: true
+  enabled: false
   id: 8bdf047ae0a66729bd3b27e8bb56fe11
 
 # Fill in your Cloudflare Analytics tracking ID to enable Cloudflare Analytics.
@@ -269,9 +269,16 @@ gravatar:
 
 # loads libraries and styles from CDN instead or relying on local files
 cdn:
-  enable: true
+  enable: false
   jquery: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
   clipboard: https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js
   font_awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
   justified_gallery_css: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css
   justified_gallery_js: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js
+
+stylus:
+  include:
+    - 'source/css/theme-classic.styl'
+    - 'source/css/theme-dark.styl'
+    - 'source/css/theme-light.styl'
+    - 'source/css/theme-wihte.styl'
