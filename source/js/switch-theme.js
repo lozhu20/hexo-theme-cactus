@@ -6,6 +6,11 @@ const themes = [
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
+
+  // 初始化检查主题模式设置是否过期，过期则清除
+  initColorThemeStorage();
+
+
   const toggleButton = document.getElementById('btn-theme-switch');
   if (!toggleButton) return;
 
@@ -45,9 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTheme(currentTheme, nextTheme);
     syncGiscusTheme(nextTheme);
-
-    localStorage.setItem('color-scheme', nextTheme.name);
   });
+
 
   window.addEventListener('message', (event) => {
     if (event.origin !== 'https://giscus.app') return;
@@ -76,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.documentElement.classList.remove(currentTheme.className);
     }
     document.documentElement.classList.add(newTheme.className);
-    localStorage.setItem('color-scheme', newTheme.name);
+    saveColorTheme(newTheme.name);
   }
 
   
@@ -110,7 +114,27 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => syncGiscusTheme(themeName), 100);
     }
   }
-  
+
+
+  // 初始化处理：检查是否有过期的color-theme并清除
+  function initColorThemeStorage() {
+    const storedTheme = localStorage.getItem('color-scheme');
+    const expiryTime = localStorage.getItem('color-scheme-expiry');
+
+    // 如果存在存储且已过期，清除它
+    if (storedTheme && expiryTime && Date.now() > Number(expiryTime)) {
+      localStorage.removeItem('color-scheme');
+      localStorage.removeItem('color-scheme-expiry');
+    }
+  }
+
+  // 保存color-theme时同时设置30分钟过期时间
+  function saveColorTheme(theme) {
+    const expiry = Date.now() + 30 * 60 * 1000; // 30分钟后过期
+    localStorage.setItem('color-scheme', theme);
+    localStorage.setItem('color-scheme-expiry', expiry.toString());
+  }
+
   // 避免页面加载时的白屏问题
   document.body.style.visibility = 'visible';
 });

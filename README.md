@@ -27,6 +27,7 @@ update on 2024-03-05 by lozhu
 
 7. Set grayout as true.
 
+
 update on 2024-04-06 by lozhu
 2024-04-06 更新
 
@@ -35,6 +36,7 @@ update on 2024-04-06 by lozhu
 2. 新增友链相关配置及数据文件
 
 3. 增加国际化配置
+
 
 update on 2024-04-09 by lozhu
 2024-04-09 更新
@@ -45,17 +47,24 @@ update on 2024-04-09 by lozhu
 
 3. 增加 [萌备](https://icp.gov.moe/aboutus.php) 配置
 
+
 update on 2024-04-15 by lozhu
 2024-04-15 更新
 
 1. 增加 RSS 订阅页面、
 
+update on 2024-04-09 by lozhu
+
+
 update on 2025-11-16 by lozhu
-2024-04-09 更新
+2025-11-16 更新
 
 1. 增加 Giscus 评论系统
+2. 增加深色模式，支持手动切换
+3. 优化小屏设备上 footer 被导航覆盖问题 (todo)
 
 ---
+
 
 ## Summary
 
