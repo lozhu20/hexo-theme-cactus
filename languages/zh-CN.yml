@@ -9,6 +9,7 @@ nav:
   travelling: 开往 🚇
   friends: 友链
   moments: 说说
+  domain_forsale: 域名出售
 
 friends:
   link:
@@ -38,6 +39,8 @@ index:
   projects: 项目
   topics: 标签
   most_recent: 最新发布
+  excerpt_from: 摘自
+  sentence_copyright: 此材料可能受版本保护。
 
 post:
   desktop:

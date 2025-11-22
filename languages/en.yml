@@ -9,6 +9,7 @@ nav:
   travelling: Travelling
   friends: Friends
   moments: Moments
+  domain_forsale: Domain Forsale
 
 friends:
   link:
@@ -38,6 +39,8 @@ index:
   projects: Projects
   topics: Topics
   most_recent: Most recent
+  excerpt_from: Excerpt From
+  sentence_copyright: Copyright
 
 post:
   desktop:

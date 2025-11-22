@@ -1,9 +1,22 @@
 <section id="about" class="p-note">
-  <% if (config.description) { %>
+  <!-- <% if (config.description) { %>
     <%- markdown(config.description) %>
-  <% } %>
-  <% if (site.data.sentence) { %>
-    <%- markdown(site.data.sentence[Math.floor(Math.random() * site.data.sentence.length)]) %>
+  <% } %> -->
+  <% if (theme.notifications.enabled && site.data.notifications) { %>
+    <%- markdown(site.data.notifications[0]) %>
+  <% } else if (theme.sentences.enabled && site.data.sentences) { %>
+    <% for (var sentence in site.data.sentences) { %>
+      <div name="sentence-container" style="display: none">
+        <p><%= site.data.sentences[sentence].content %></p>
+        <% if (site.data.sentences[sentence].excerptFrom) { %>
+          <span><%= __('index.excerpt_from') %> <%= site.data.sentences[sentence].excerptFrom %></span><br />
+        <% } %>
+        <% if (site.data.sentences[sentence].author) { %>
+          <span><%= site.data.sentences[sentence].author %></span><br />
+        <% } %>
+        <span><%= __('index.sentence_copyright') %></span>
+      </div>
+    <% } %>
   <% } %>
   <% if (theme.social_links) { %>
     <p>

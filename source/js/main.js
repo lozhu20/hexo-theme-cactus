@@ -55,16 +55,16 @@ $(document).ready(function() {
      * Add a scroll listener to the menu to hide/show the navigation links.
      */
     if (menu.length) {
-      $(window).on("scroll", function() {
+      $(window).on("scroll", function() {        
         var topDistance = menu.offset().top;
 
         // hide only the navigation links on desktop
-        if (!nav.is(":visible") && topDistance < 50) {
+        if (!nav.is(":visible") && topDistance < 100) {
           nav.show();
-        } else if (nav.is(":visible") && topDistance > 100) {
+        } else if (nav.is(":visible") && topDistance > 85) {
           nav.hide();
         }
-
+        
         // on tablet, hide the navigation icon as well and show a "scroll to top
         // icon" instead
         if ( ! $( "#menu-icon" ).is(":visible") && topDistance < 50 ) {

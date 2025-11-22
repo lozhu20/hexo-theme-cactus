@@ -8,62 +8,53 @@ A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal websi
 
 **This theme is modified some features from [hexo-theme-cactus](https://probberechts.github.io/hexo-theme-cactus/).**
 
-## Modifications by me
 
-update on 2024-03-05 by lozhu
-2024-03-05 更新
+
+## Modifications
+
+### update on 2024-03-05
 
 1. Set "white" as default color scheme, all modifications are only based on "white" color scheme.
-
 2. Modify default logo size from 50 to 55, reform nav margin top.
-
 3. Replace comma that after each social icon to whitespace.
-
 4. Remove category infomation from post detail, post tags arg remained.
-
 5. Modify content width from 48 to 52.
-
 6. Replace the underline color of post tag info with green color.
-
 7. Set grayout as true.
 
 
-update on 2024-04-06 by lozhu
-2024-04-06 更新
+### update on 2024-04-06
 
 1. 新增友链页面
-
 2. 新增友链相关配置及数据文件
-
 3. 增加国际化配置
 
 
-update on 2024-04-09 by lozhu
-2024-04-09 更新
+### update on 2024-04-09
 
 1. 增加文章详情页图片弹窗预览
-
 2. nav 中增加 [开往](https://www.travellings.cn) 
-
 3. 增加 [萌备](https://icp.gov.moe/aboutus.php) 配置
 
 
-update on 2024-04-15 by lozhu
-2024-04-15 更新
+### update on 2024-04-15
 
 1. 增加 RSS 订阅页面、
 
-update on 2024-04-09 by lozhu
 
-
-update on 2025-11-16 by lozhu
+### update on 2025-11-16
 2025-11-16 更新
 
 1. 增加 Giscus 评论系统
 2. 增加深色模式，支持手动切换
 3. 优化小屏设备上 footer 被导航覆盖问题 (todo)
 
----
+
+### update on 2025-11-22
+
+1. Add random sentence in index page.
+2. Add notifications in index page.
+
 
 
 ## Summary
@@ -75,10 +66,14 @@ update on 2025-11-16 by lozhu
 - [Configuration](#configuration)
 - [License](#license)
 
+
+
 ## General
 
 - **Version** : 3.0
 - **Compatibility** : Hexo 3 or later
+
+
 
 ## Features
 
@@ -93,6 +88,8 @@ update on 2025-11-16 by lozhu
 - Google analytics / Baidu Tongji / [Umami Analytics](https://umami.is) 
 - Font Awesome icons
 - Simplicity
+
+
 
 ## Prerequisites
 
@@ -109,6 +106,8 @@ update on 2025-11-16 by lozhu
     ```sh
     $ cd my-blog
     ```
+
+
 
 ## Install
 
@@ -147,6 +146,8 @@ update on 2025-11-16 by lozhu
 
 5. [Publish your blog](https://hexo.io/docs/one-command-deployment.html)!
 
+
+
 ## Configuration
 
 You can (and should) modify a couple of settings. An overview of all settings
@@ -172,6 +173,7 @@ colorscheme: dark
 
 This will override the default black colorscheme in `themes/cactus/_config.yml`.
 
+
 ### Color scheme
 
 Currently, this theme is delivered with four color schemes: [dark](https://probberechts.github.io/hexo-theme-cactus/cactus-dark/public/), [light](https://probberechts.github.io/hexo-theme-cactus/cactus-light/public/),
@@ -183,6 +185,7 @@ colorscheme: light
 
 Alternatively, you can easily create your own color scheme by creating a new
 file in `source/css/_colors`.
+
 
 ### Navigation
 
@@ -196,6 +199,7 @@ nav:
   projects: http://github.com/probberechts
   LINK_NAME: URL
 ```
+
 
 ### Blog posts list on home page
 
@@ -216,6 +220,7 @@ You have two options for the list of blog posts on the home page:
       show_all_posts: true
     ```
 
+
 ### Projects list
 
 Create a projects file `source/_data/projects.json` to show a list of your projects on the index page.
@@ -234,6 +239,7 @@ Create a projects file `source/_data/projects.json` to show a list of your proje
     }
 ]
 ```
+
 
 ### Social media links
 
@@ -257,6 +263,7 @@ social_links:
 
 where `NAME` is the name of a [Font Awesome icon](https://fontawesome.com/icons?d=gallery&s=brands), and LABEL is an optional value used as a title attribute on the link (NAME value is used if LABEL is missing).
 
+
 ### Copyright years
 
 By default, Cactus will use current year in your copyright year information.
@@ -267,6 +274,7 @@ copyright:
   start_year: 2016
   end_year:
 ```
+
 
 ### Language configuration
 
@@ -298,6 +306,7 @@ Otherwise, you can follow the steps below (E.g., to add a Japanese (ja) translat
 
 **Note: Cactus does not support multi-language sites.**
 
+
 ### RTL support
 
 This theme support RTL languages for Persian and Arabic language.
@@ -308,6 +317,7 @@ Note that this also will change the font to [Vazir](https://github.com/rastikerd
 direction: rtl
 ```
 
+
 ### RSS
 
 Set the `rss` field in the `_config.yml` to one of the following values:
@@ -315,6 +325,7 @@ Set the `rss` field in the `_config.yml` to one of the following values:
 1. `rss: false` will totally disable rss (default).
 2. `rss: atom.xml` sets a specific feed link.
 3. `rss:`leave empty to use the [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) plugin.
+
 
 ### Analytics
 
@@ -340,6 +351,7 @@ umami_analytics:
   script_name: umami.js
 ```
 
+
 ### CDN
 
 Load Javascript and CSS resources from a CDN. Enabled by default, loads all resources from [cdnjs](https://cdnjs.com/).
@@ -364,9 +376,11 @@ cdn:
 
 Only JQuery will be loaded from the specified CDN.
 
+
 ### Comments
 
 Cactus supports two commenting systems: [Disqus](https://disqus.com) and [Utterances](https://utteranc.es).
+
 
 #### Disqus
 
@@ -404,6 +418,7 @@ where each of the parameters are the respective values ​​provided during the
 * `label`: the label that will be assigned to issues created by Utterances
 * `theme`: the selected Utterances theme.
 
+
 ### Code Highlighting
 
 Pick one of [the available colorschemes](https://github.com/probberechts/hexo-theme-cactus/tree/master/source/css/_highlight) and add it to the `_config.yml`:
@@ -411,6 +426,7 @@ Pick one of [the available colorschemes](https://github.com/probberechts/hexo-th
 ```yml
 highlight: COLORSCHEME_NAME
 ```
+
 
 ### Tags and categories
 
@@ -454,6 +470,7 @@ nav:
   category: /categories/
 ```
 
+
 ### Local search
 
 First, install the [hexo-generate-search](https://www.npmjs.com/package/hexo-generator-search)
@@ -483,6 +500,8 @@ Finally, edit the `_config.yml` and add a link to the navigation menu.
 nav:
   search: /search/
 ```
+
+
 
 ## License
 

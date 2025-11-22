@@ -21,6 +21,7 @@ nav:
   friends: /friends/
   # moments: /moments/
   # search: /search/
+  domain_forsale: https://domain-forsale.happy365.day
   about: /about/
   # travelling: https://www.travellings.cn/go.html
   ☀️: /theme/
@@ -48,6 +49,14 @@ social_links:
   #   icon: rss
   #   label: rss
   #   link: https://lozhu.happy365.day/atom.xml
+
+# random sentence
+sentences:
+  enabled: true
+
+# display latest nofitication
+notifications:
+  enabled: false
 
 # friends link template config
 friends:
